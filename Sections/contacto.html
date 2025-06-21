@@ -1,0 +1,79 @@
+<section class="contacto-grid">
+    <div class="formulario-contacto">
+        <h2>Contactanos</h2>
+
+        <p class="texto-invitacion">
+            En SIEG nos gustaría ser parte de tu proyecto. No dudes en contactarnos para resolver cualquier inquietud o solicitar información. 
+            Estamos listos para ayudarte.
+        </p>
+
+        <form id="formulario-contacto" onsubmit="return validarFormulario();">
+
+            <div class="campo">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+            </div>
+
+            <div class="campo">
+                <label for="motivo">Motivo de Contacto:</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="cotizacion">Cotización</option>
+                    <option value="soporte">Soporte Técnico</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Ciudad, Estado" required>
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+            </div>
+
+            <div class="campo">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="10 dígitos (opcional)" pattern="[0-9]{10}">
+            </div>
+
+            <div class="campo">
+                <label for="mensaje">Detalles o Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Describe tu solicitud" required></textarea>
+            </div>
+
+            <button type="submit">Enviar Mensaje</button>
+
+            <p style="text-align:center; margin-top:30px;">O si prefieres, contáctanos directamente por WhatsApp:</p>
+
+            <a href="https://wa.me/5214521141024" target="_blank" class="boton-whatsapp">
+                Contactar por WhatsApp
+            </a>
+        </form>
+    </div>
+
+    <div class="informacion-contacto">
+        <h3>Informacion de Contacto</h3>
+
+        <p><strong>Dirección:</strong> Calle Yucatán 71, Uruapan, Michoacán</p>
+        <p><strong>Teléfonos:</strong> +52 452 114 1024 | +52 452 158 4781</p>
+        <p><strong>Correo:</strong> contacto@aesieg.com</p>
+        <p><strong>Horario de Atención:</strong> Lunes a Viernes, 9:00 AM - 6:00 PM</p>
+
+        <div class="mapa-contacto">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.5872775157427!2d-102.05358849999999!3d19.4225228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842de3004b28d485%3A0x7281f038d6c633ab!2sSIEG!5e1!3m2!1ses-419!2smx!4v1745882331283!5m2!1ses-419!2smx" 
+                width="100%" 
+                height="100%" 
+                style="border:0; border-radius: 15px;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<script src="/JS/validar-formulario.js"></script>

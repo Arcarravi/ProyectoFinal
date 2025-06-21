@@ -1,0 +1,138 @@
+.encabezado {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+.menu {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.menu ul {
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes {
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.presentacion {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 8%;
+}
+
+.descripcion, .portada {
+    width: 100%;
+}
+
+.portada{
+    height: 40vh;
+}
+
+.galeria-container {
+    padding: 10px;
+    border-width: 3px;
+    max-width: 95%;
+}
+
+.galeria img {
+    width: 95%;
+    height: auto;
+    object-fit: cover;
+}
+
+.servicios {
+    width: 90%;
+    padding: 5%;
+}
+
+.tarjeta-servicio {
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.tarjeta-servicio .descripcion-s, 
+.tarjeta-servicio .portada-s {
+    width: 100%;
+    text-align: center;
+}
+
+.tarjeta-servicio .portada-s img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.descargas-bloque {
+    padding: 1.5rem;
+}
+
+.footer-container {
+    flex-direction: column;
+    text-align: center;
+}
+
+.datos-contacto p {
+    justify-content: center;
+}
+
+.copyright, .datos-contacto {
+    padding: 0;
+}
+    
+    .contacto-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .formulario-contacto,
+    .informacion-contacto {
+        flex: 0 0 100%;
+    }
+
+    .mapa-contacto {
+        height: 350px;
+    }
+
+    .error-content h1 {
+        font-size: 2rem;
+    }
+
+    .error-content p {
+        font-size: 1rem;
+    }
+
+    .error-content img {
+        width: 200px;
+    }
+
+    .boton-regresar {
+        font-size: 0.95rem;
+        padding: 10px 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .datos-contacto {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .datos-contacto p {
+        justify-content: center;
+    }

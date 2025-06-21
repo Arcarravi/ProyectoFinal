@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Administración de Blog | AESIEG</title>
+  <meta name="description" content="Panel administrativo para crear, modificar y eliminar publicaciones del blog de AESIEG." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="canonical" href="https://www.aesieg.com/admin-blog.html" />
+  <link rel="stylesheet" href="crud.css" />
+</head>
+<body>
+  <script type="module" src="crud_blog.js"></script>
+
+  <header>
+    <h1>Panel de Administración de Blog</h1>
+     <span id="welcome-text">Bienvenido:</span>
+    <button id="logout-btn">Cerrar sesión</button>
+  </header>
+
+  <main>
+    <section id="lista-entradas" aria-label="Listado de publicaciones del blog">
+      <h2>Entradas existentes</h2>
+      <div id="entradas-container">
+        <!-- Aquí se cargarán las entradas dinámicamente -->
+      </div>
+    </section>
+
+    <section id="formulario-entrada" aria-label="Formulario para crear o editar entradas">
+      <h2>Crear / Editar Entrada</h2>
+      <form id="entrada-form" aria-describedby="form-instructions" enctype="multipart/form-data">
+        <p id="form-instructions" class="sr-only">Complete los campos para crear o editar una entrada del blog.</p>
+
+        <input type="hidden" id="entrada-id" name="entrada-id" />
+
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required aria-required="true" />
+
+        <label for="resumen">Resumen:</label>
+        <textarea id="resumen" name="resumen" rows="2" placeholder="Pequeña descripción o resumen"></textarea>
+
+        <label for="contenido">Contenido:</label>
+        <textarea id="contenido" name="contenido" rows="5" required aria-required="true"></textarea>
+
+        <label for="imagen">Seleccionar imagen:</label>
+        <input type="file" id="imagen" name="imagen" accept="image/*" />
+        <span id="imagen-nombre" aria-live="polite"></span>
+
+        <button type="submit">Guardar</button>
+        <button type="button" id="cancelar">Cancelar</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="SIEG - Soluciones de Ingeniería Estructural y Geodesia" />
+    <meta name="copyright" content="SIEG © 2025" />
+
+    <title>Ingeniería Estructural y Geodesia | SIEG</title>
+    <meta name="description"
+        content="Ofrecemos soluciones en ingeniería estructural, geodesia, topografía, fotogrametría y diseño estructural. SIEG: todo lo que tu proyecto necesita, en un solo lugar." />
+    <meta name="keywords"
+        content="ingeniería estructural, geodesia, topografía, fotogrametría, batimetría, modelado 3D, diseño estructural, dictamen estructural, líneas base, proyectos, SIEG" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SIEG | Soluciones de Ingeniería Estructural y Geodesia" />
+    <meta property="og:description"
+        content="Especialistas en topografía, modelado 3D, cálculo estructural y geodesia. Tu proyecto con calidad y precisión." />
+    <meta property="og:url" content="https://www.aesieg.com/" />
+    <meta property="og:image" content="https://www.aesieg.com/Assets/Images/Mesa_de_trabajo_blanco.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SIEG | Ingeniería Estructural y Geodesia" />
+    <meta name="twitter:description"
+        content="Proyectos de ingeniería estructural, topografía y modelado 3D en México. Contáctanos." />
+    <meta name="twitter:image" content="https://www.aesieg.com/Assets/Images/Mesa_de_trabajo_blanco.png" />
+
+    <link rel="stylesheet" href="Styles/general.css">
+    <link rel="stylesheet" href="Styles/desktop.css">
+    <link rel="stylesheet" href="Styles/tablet.css" media="screen and (min-width: 768px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="Styles/movil.css" media="screen and (max-width: 767px)">
+
+    <script type="application/ld+json">
+        {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "SIEG - Soluciones de Ingeniería Estructural y Geodesia",
+      "image": "https://www.aesieg.com/Assets/Images/Mesa_de_trabajo_blanco.png",
+      "url": "https://www.aesieg.com/",
+      "telephone": "+52 452 114 1024",
+      "email": "contacto@aesieg.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Calle Yucatán 71",
+        "addressLocality": "Uruapan",
+        "addressRegion": "Michoacán",
+        "postalCode": "60050",
+        "addressCountry": "MX"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 19.4225228,
+        "longitude": -102.0535885
+      },
+      "openingHours": "Mo-Fr 09:00-18:00",
+      "priceRange": "$$",
+      "description": "SIEG es una empresa especializada en ingeniería estructural, geodesia, topografía, fotogrametría, batimetría y modelado 3D. Ofrecemos soluciones integrales para proyectos civiles y estructurales.",
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=100090091901611",
+        "https://www.instagram.com/aesieg"
+      ]
+    }
+    
+    </script>
+
+</head>
+<body>
+    <div id="intro-logo">
+        <img src="Assets/Images/Mesa_de_trabajo_blanco.png" alt="SIEG" />
+      </div>
+
+    <div class="encabezado">
+        <div class="logo">
+            <img src="Assets/Images/Mesa_de_trabajo_color.png" alt="SIEG" width="175" height="175">
+        </div>
+        <header>
+            <h1>Soluciones de Ingenieria Estructural y Geodesia</h1>
+            <nav class="menu">
+                <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">&#9776;</button>
+                <ul class="menu-items">
+                    <li><a href="/home" data-seccion="home">Inicio</a></li>
+                    <li><a href="/servicios" data-seccion="servicios">Servicios</a></li>
+                    <li><a href="/proyectos" data-seccion="proyectos">Proyectos</a></li>
+                    <li><a href="/nosotros" data-seccion="nosotros">Nosotros</a></li>
+                    <li><a href="/contacto" data-seccion="contacto">Contacto</a></li>
+                    <li><a href="admin/login.html" target="_blank" rel="noopener noreferrer">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="redes">
+            <a href="https://www.facebook.com/profile.php?id=100090091901611">
+                <img src="Assets/Images/Icons/icon-face.png" alt="Facebook" width="40" height="40">
+            </a>
+            <a href="https://www.instagram.com/aesieg">
+                <img src="Assets/Images/Icons/icon-insta.png" alt="Instagram" width="40" height="40">
+            </a>
+        </div>
+    </div>
+
+    <div id="contenido-dinamico">
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="copyright">
+                <p>&copy; 2025 SIEG - Ingeniería Estructural y Geodesia</p>
+            </div>
+            <div class="datos-contacto">
+                <p>📍 Calle Yucatán 71, Uruapan, Michoacán</p>
+                <p>📞 +52 452 114 1024 | +52 452 158 4781</p>
+                <p>📧 contacto@aesieg.com</p>
+            </div>
+    </footer>
+
+        <script src="JS/main.js"></script>
+
+    <script>
+         const toggleBtn = document.querySelector('.menu-toggle');
+         const menuList = document.querySelector('.menu-items');
+
+        toggleBtn.addEventListener('click', () => {
+            const isExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+        toggleBtn.setAttribute('aria-expanded', !isExpanded);
+        menuList.classList.toggle('show');
+        });
+
+        document.querySelectorAll('.menu-items a').forEach(link => {
+        link.addEventListener('click', () => {
+            menuList.classList.remove('show');
+        toggleBtn.setAttribute('aria-expanded', false);
+        });
+  });
+      </script>
+
+</body>
+</html>
